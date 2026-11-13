@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    string nama;
+    float keaktifan, tugas, ujian;
+    float murni_keaktifan, murni_tugas, murni_ujian, akhir;
+
+    cout<<"PORGRAM HITUNG NILAI AKHIR"<<endl;
+    cout<<endl;
+    cout<<"Nama Siswa     : "; getline(cin, nama);
+    cout<<"Nilai Keaktifan: "; cin>>keaktifan;
+    cout<<"Nilai Tugas    : "; cin>>tugas;
+    cout<<"Nilai ujian    : "; cin>>ujian;
+
+    murni_keaktifan = keaktifan * 20 / 100;
+    murni_tugas = tugas * 30 / 100;
+    murni_ujian = ujian * 50 / 100;
+    akhir = murni_keaktifan + murni_tugas + murni_ujian;
+
+    cout<<endl;
+    cout<<"Siswa yang bernama "<<nama<<endl;
+    cout<<"Dengan nilai presentase yang dihasilkan:"<<endl;
+    cout<<"Nilai Keaktifan * 20% : "<<murni_keaktifan<<endl;
+    cout<<"Nilai Tugas * 30%     : "<<murni_tugas<<endl;
+    cout<<"Nilai Ujian * 50%     : "<<murni_ujian<<endl;
+    cout<<endl;
+    cout<<"Jadi Siswa yang bernama "<<nama<<" Memperoleh nilai akhir sebesar "<<akhir<<endl;
+
+    return 0;
+}
